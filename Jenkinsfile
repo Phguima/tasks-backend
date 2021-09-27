@@ -61,7 +61,8 @@ pipeline{
         }
         stage('Deploy Prod'){
             steps{
-                sh 'sudo docker-compose up -d'
+                sh 'echo G4sp4r1n4qazplm | sudo docker-compose build'
+                sh 'echo G4sp4r1n4qazplm | sudo docker-compose up -d'
             }
         }
     }
